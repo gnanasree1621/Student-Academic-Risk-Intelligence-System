@@ -13,7 +13,7 @@ st.set_page_config(
 
 
 # Load the Maths dataset from the data folder
-df = pd.read_csv("data/Maths.csv")
+df = pd.read_csv("Maths.csv")
 
 
 # Create Result based on the final grade (G3)
