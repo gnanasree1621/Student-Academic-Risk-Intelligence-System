@@ -13,7 +13,13 @@ st.set_page_config(
 
 
 # Load the Maths dataset from the data folder
-df = pd.read_csv("Maths.csv")
+import os
+import pandas as pd
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_PATH = os.path.join(BASE_DIR, "maths.csv")
+
+df = pd.read_csv(DATA_PATH)
 
 
 # Create Result based on the final grade (G3)
